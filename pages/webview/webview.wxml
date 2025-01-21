@@ -1,0 +1,16 @@
+<!--pages/webview/webview.wxml-->
+<view class="article-content">
+  <text class="content-header">{{articleTitle}}</text>
+  <view class="content-author">
+    {{articleAuthor}} | {{artdate}}
+  </view>
+
+  <!-- 显示图片 -->
+  <view wx:if="{{articleImageUrl}}">
+    <image src="{{articleImageUrl}}" mode="aspectFill" class="article-image" />
+  </view>
+
+  <view class="article-text">
+    <text >{{articleText}}</text>
+  </view>
+</view>

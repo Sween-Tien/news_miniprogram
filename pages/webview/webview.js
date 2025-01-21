@@ -1,0 +1,76 @@
+// pages/webview/webview.js
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    articleText: '',  // 存储文章文本
+    articleTitle:'',
+    articleAuthor:'',
+    artdate:'',
+    articleImageUrl: '' // 存储图片链接
+  },
+
+  onLoad(options) {
+    if (options.text) {
+      this.setData({
+        articleText: decodeURIComponent(options.text), // 解码并展示文章内容
+        articleTitle:decodeURIComponent(options.title),
+        articleAuthor:decodeURIComponent(options.author),
+        artdate:decodeURIComponent(options.publish_date),
+        articleImageUrl: decodeURIComponent(options.imageUrl)
+      });
+    }
+  },
+
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload() {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh() {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom() {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage() {
+
+  }
+})

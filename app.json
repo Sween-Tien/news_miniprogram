@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/webview/webview",
+    "pages/news/news"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#cda4e0",
+    "navigationBarTitleText": "NEWS ALL OVER THE WORLD",
+    "navigationBarTextStyle": "white"
+  }
+}

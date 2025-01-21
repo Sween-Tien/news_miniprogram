@@ -1,0 +1,24 @@
+/* 文章内容部分 */
+.article-content {
+  margin-top: 20px;
+}
+
+.content-header {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007aff;
+}
+
+.article-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* 若没有选择文章内容时的提示 */
+.text-placeholder {
+  color: #999;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}

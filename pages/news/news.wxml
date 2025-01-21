@@ -1,0 +1,10 @@
+<!--pages/news/news.wxml-->
+<view class="container">
+  <text style="font-size: large;">News for {{country}}:</text>
+  <block wx:for="{{articles}}" wx:key="index">
+    <view class="article-item" bindtap="goToArticle" data-title="{{item.title}}" data-text="{{item.text}}" data-author="{{item.author}}" data-publish_date="{{item.publish_date}}" data-imageurl="{{item.imageUrl}}">
+        <!-- 显示文章标题 -->
+        <text class="article-title">{{item.title}}</text>
+      </view>
+  </block>
+</view>

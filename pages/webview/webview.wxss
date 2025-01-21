@@ -1,0 +1,36 @@
+/* pages/webview/webview.wxss */
+.article-content {
+  padding: 20px;
+}
+
+.content-header {
+  font-size: 20px;
+  font-weight: bold;
+  color: #cc82e9;
+  margin-bottom: 10px;
+  user-select: text;  /* 允许用户选择和复制文本 */
+}
+
+.content-author {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: rgb(119, 119, 119);
+  user-select: text;  /* 允许用户选择和复制文本 */
+}
+
+.article-text {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  white-space: pre-wrap;  /* 保留换行 */
+  word-wrap: break-word;  /* 自动换行 */
+  user-select: text;  /* 允许用户选择和复制文本 */
+}
+.article-image {
+  width: 100%;  /* 使图片宽度填满容器 */
+  height: auto;  /* 高度自动 */
+  margin-top: 15px;
+  border-radius: 10px;  /* 可选，给图片添加圆角 */
+}

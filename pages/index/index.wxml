@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="search-bar">
+    <input placeholder="   Enter country name" bindinput="onSearchInput" />
+    <button bindtap="onSearchSubmit">
+    <image src="/images/search.png" class="search-icon" mode="aspectFit"></image>
+    </button>
+  </view>
+
+  <view class="carousel">
+    <swiper autoplay="true" interval="3000" circular="true" indicator-dots="true" indicator-dots>
+      <block wx:for="{{carouselImages}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" mode="aspectFill" class="carousel-image" />
+          <view class="carousel-text">{{carouselTexts[index]}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="recommendations">
+    <text style="font-size: 20px;">ChinaDaily Articles:</text>
+    <block wx:for="{{recommendedArticles}}" wx:key="index">
+      <view class="article-item" bindtap="goToArticle" data-title="{{item.title}}" data-text="{{item.text}}" data-author="{{item.author}}" data-publish_date="{{item.publish_date}}" data-imageurl="{{item.imageUrl}}">
+        <!-- 显示文章标题 -->
+        <text class="article-title">{{item.title}}</text>
+      </view>
+    </block>
+  </view>
+</view>
